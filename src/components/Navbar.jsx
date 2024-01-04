@@ -33,27 +33,6 @@ const Navbar = ({ position }) => {
     },
   ];
 
-  const navLinksDashboard = [
-    {
-      title: "account",
-      path: "/u/dashboard/account",
-    },
-    {
-      title: "ratings",
-      path: "/u/dashboard/ratings",
-    },
-    {
-      title: "github",
-      path: "/u/dashboard/github",
-    },
-  ];
-
-  const toggleActive = () => {
-    if (window.innerWidth < 768) {
-      setActive((prevActive) => !prevActive);
-    }
-  };
-
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
@@ -113,17 +92,17 @@ const Navbar = ({ position }) => {
       } inset-x-0 top-0 z-50 pt-8  justify-center md:flex pointer-events-auto w-full m-auto`}
       style={{ ...navbarStyle }}
     >
-      <div className="flex cursor-pointer items-center gap-4 rounded-full bg-cyan-400 p-2">
+      <div className="flex items-center gap-4 rounded-full bg-cyan-400 p-2">
         <div className="flex gap-4 items-center px-4">
           {navLinks.map((navLink, index) => (
             <Link
               to={navLink.path}
               key={index}
-              className={`px-2 py-1 text-white cursor-pointer text-sm uppercase font-semibold font-tilt rounded-md flex justify-center items-center transition ${
+              className={`px-2 py-1 text-white cursor-pointer text-sm uppercase font-semibold font-nunito rounded-md flex justify-center items-center transition duration-500 ${
                 location.pathname === navLink.path
                   ? "bg-zinc-400 text-zinc-950"
                   : ""
-              } hover:bg-zinc-200`}
+              } hover:bg-neutral-100 hover:text-neutral-700`}
             >
               {navLink.title}
             </Link>

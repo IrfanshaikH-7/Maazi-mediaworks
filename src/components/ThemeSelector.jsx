@@ -33,8 +33,8 @@ const ThemeSelector = () => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-16 origin-top-right rounded-3xl bg-cyan-400 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className="py-4 flex flex-col items-center gap-2">
+        <Menu.Items className="absolute right-0 z-10 mt-2  origin-top-right rounded-3xl bg-cyan-400 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div className="p-4 flex flex-col items-center gap-1.5">
             <Menu.Item>
               <div
                 onClick={() => {
@@ -49,7 +49,9 @@ const ThemeSelector = () => {
                 }}
                 className="text-neutral-700  cursor-pointer"
               >
-                1
+                <p className="px-3 py-0.5 text-xs rounded-lg border hover:border-cyan-400  text-white hover:text-neutral-600 hover:bg-white transition">
+                  1
+                </p>
               </div>
             </Menu.Item>
             <Menu.Item>
@@ -66,7 +68,9 @@ const ThemeSelector = () => {
                 }}
                 className="text-neutral-700 cursor-pointer"
               >
-                2
+                <p className="px-3 py-0.5 text-xs rounded-lg border hover:border-cyan-400  text-white hover:text-neutral-600 hover:bg-white transition">
+                  2
+                </p>
               </div>
             </Menu.Item>
             <Menu.Item>
@@ -83,7 +87,9 @@ const ThemeSelector = () => {
                 }}
                 className="text-neutral-700 cursor-pointer"
               >
-                3
+                <p className="px-3 py-0.5 text-xs rounded-lg border hover:border-cyan-400  text-white hover:text-neutral-600 hover:bg-white transition">
+                  3
+                </p>
               </div>
             </Menu.Item>
           </div>

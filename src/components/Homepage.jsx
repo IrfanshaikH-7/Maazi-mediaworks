@@ -25,11 +25,12 @@ const Homepage = () => {
             Mediaworks
           </h2>
         </div>
-        <ChevronDownIcon className="h-12 w-12 absolute bottom-16 left-1/2 -translate-x-[50%] text-neutral-700" />
+        {/* <ChevronDownIcon className="h-12 w-12 absolute bottom-16 left-1/2 -translate-x-[50%] text-neutral-700" /> */}
       </div>
       <div className="h-full w-full">
-        <div className="h-40 w-full bg-transparent"></div>
+        <div className="h-28 w-full bg-transparent"></div>
         <Thinking />
+        <div className="h-24 w-full"></div>
       </div>
     </section>
   );

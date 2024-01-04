@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -6,16 +6,13 @@ import {
   Route,
   useNavigate,
 } from "react-router-dom";
-import './App.css'
-import Navbar from './components/Navbar'
+import "./App.css";
+import Navbar from "./components/Navbar";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout/>}>
-      
-        <Route index element={<Homepage />} />
-      
-      
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Homepage />} />
     </Route>
     // <Route errorElement={<ErrorPage />}>
     //   <Route path="/" element={<Layout />}>
@@ -82,21 +79,25 @@ const router = createBrowserRouter(
     //   </Route>
     //   <Route path="/u/leaderboard" element={<Leaderboard />} />
     // </Route>,
-  ),
+  )
 );
 import Snowfall from "react-snowfall";
-import Layout from './components/Layout';
-import Homepage from './components/Homepage';
+import Layout from "./components/Layout";
+import Homepage from "./components/Homepage";
 
 function App() {
-
   return (
     <>
-          <div >
-          <Snowfall  snowflakeCount={100} speed={[0.2, 1]} wind={[0, 1]} style={{position:"fixed",zIndex:999999}}/>
-            <RouterProvider router={router} />
-          </div>
+      <div>
+        <Snowfall
+          snowflakeCount={100}
+          speed={[0.2, 1]}
+          wind={[0, 1]}
+          style={{ position: "fixed", zIndex: 999999 }}
+        />
+        <RouterProvider router={router} />
+      </div>
     </>
   );
 }
-export default App
+export default App;

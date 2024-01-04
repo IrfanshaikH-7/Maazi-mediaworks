@@ -29,7 +29,7 @@ const Thinking = () => {
         </p>
         <div className="font-nunito mt-2 px-20">
           <span className="text-sm ">let's dive into bussiness than</span>
-          <p className="text-green-500 font-bold hover:bg-green-500/30  p-2 rounded-3xl w-fit">
+          <p className="text-green-500 font-bold hover:bg-green-500/30  hover:px-5 cursor-pointer py-3 rounded-3xl w-fit transition-all duration-500">
             Get in touch with us
           </p>
         </div>
