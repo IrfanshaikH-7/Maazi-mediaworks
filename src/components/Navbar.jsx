@@ -98,19 +98,20 @@ const Navbar = ({ position }) => {
             <Link
               to={navLink.path}
               key={index}
-              className={`px-2 py-1 text-white cursor-pointer text-sm uppercase font-semibold font-nunito rounded-md flex justify-center items-center transition duration-500 ${
+              className={`px-2 py-1 group text-white cursor-pointer text-sm uppercase font-semibold font-nunito rounded-md flex flex-col justify-center items-center transition duration-500 ${
                 location.pathname === navLink.path
                   ? "bg-zinc-400 text-zinc-950"
                   : ""
-              } hover:bg-neutral-100 hover:text-neutral-700`}
+              }hover:text-white `}
             >
               {navLink.title}
+              <div className="h-[2px] rounded-xl  w-0 bg-white group-hover:w-full transition-all duration-500"></div>
             </Link>
           ))}
           {/* {renderAdminLink()} */}
         </div>
       </div>
-      <div className=" absolute top-8 right-8">
+      <div className=" absolute top-8 right-12">
         <ThemeSelector />
         <div
           onClick={handleClick}

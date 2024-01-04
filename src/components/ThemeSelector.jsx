@@ -16,9 +16,9 @@ const ThemeSelector = () => {
       className="relative inline-block outline-none outline-offset-0 ring-0 ring-offset-0 focus:outline-0 focus:outline-offset-0 focus:ring-0 focus:ring-offset-0 text-left"
     >
       <div>
-        <Menu.Button className="flex w-full justify-center gap-x-1.5 rounded-3xl bg-cyan-400 group px-6 p-[11px]  shadow-sm outline-none outline-offset-0 ring-0 ring-offset-0 focus:outline-0 focus:outline-offset-0 focus:ring-0 focus:ring-offset-0 ">
+        <Menu.Button className="flex w-full justify-center gap-x-1.5 rounded-3xl bg-cyan-400 hover:bg-cyan-500  group px-6 p-[11px] transition duration-300 shadow-sm outline-none outline-offset-0 ring-0 ring-offset-0 focus:outline-0 focus:outline-offset-0 focus:ring-0 focus:ring-offset-0 ">
           <RectangleGroupIcon
-            className="-mr-1 h-5 w-5 text-neutral-700 group-hover:text-neutral-900"
+            className="-mr-1 h-5 w-5 text-white transition duration-500"
             aria-hidden="true"
           />
         </Menu.Button>

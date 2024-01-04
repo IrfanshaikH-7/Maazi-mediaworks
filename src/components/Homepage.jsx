@@ -2,12 +2,9 @@ import React from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Thinking from "./Lotties/Thinking";
 
-// import {ThemeStore} from '../store'
 const Homepage = () => {
-  // const setTheme = ThemeStore((state) => state.setTheme)
-
   return (
-    <section className="h-full">
+    <section className="h-full no-scrollbarr">
       <div className="h-screen w-full flex justify-center items-center  -mt-20">
         <div className="bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-cyan-600 from-20% via-transparent via-50% to-transparent h-full flex flex-col justify-center w-2/3 ">
           <div className="flex gap-14 ml-12 items-center justify-start">
@@ -28,7 +25,7 @@ const Homepage = () => {
         {/* <ChevronDownIcon className="h-12 w-12 absolute bottom-16 left-1/2 -translate-x-[50%] text-neutral-700" /> */}
       </div>
       <div className="h-full w-full">
-        <div className="h-28 w-full bg-transparent"></div>
+        <div className="h-24 w-full bg-transparent"></div>
         <Thinking />
         <div className="h-24 w-full"></div>
       </div>

@@ -7,18 +7,18 @@ export default function Layout() {
   console.log(imageUrl);
   return (
     <>
-      <main className="bg-white">
+      <main className="bg-white no-scrollbar">
         <div
           style={{
             backgroundImage: `url(/${
               imageUrl.backgroundImage && imageUrl.backgroundImage
             }.svg)`,
           }}
-          className="bg-center bg-fixed"
+          className="bg-center bg-fixed no-scrollbar"
         >
           <Navbar />
 
-          <Outlet />
+          <Outlet className="no-scrollbar" />
         </div>
       </main>
     </>

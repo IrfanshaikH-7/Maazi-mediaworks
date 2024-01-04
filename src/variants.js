@@ -1,7 +1,7 @@
 export const fadeIn = (direc, delay) => {
     return {
         hidden: {
-            y: direc === 'up' ? 40 : direc === 'down' ? -40 : 0,
+            y: direc === 'up' ? 100 : direc === 'down' ? -40 : 0,
             x: direc === 'left' ? 120 : direc === 'right' ? -40 : 0,
             opacity:0
         },
