@@ -7,7 +7,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function ThemeSelector() {
+const ThemeSelector = () => {
   const setTheme = ThemeStore((state) => state.setTheme);
 
   return (
@@ -91,4 +91,5 @@ export default function ThemeSelector() {
       </Transition>
     </Menu>
   );
-}
+};
+export default ThemeSelector;
