@@ -92,7 +92,7 @@ const Navbar = ({ position }) => {
       } inset-x-0 top-0 z-50 pt-8  justify-center md:flex pointer-events-auto w-full m-auto`}
       style={{ ...navbarStyle }}
     >
-      <div className="flex items-center gap-4 rounded-full bg-cyan-400 p-2">
+      <div className="flex items-center gap-4 rounded-full bg-cyan-400 px-4 p-2">
         <div className="flex gap-4 items-center px-4">
           {navLinks.map((navLink, index) => (
             <Link
