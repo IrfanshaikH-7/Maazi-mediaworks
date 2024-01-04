@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon, RectangleGroupIcon } from "@heroicons/react/20/solid";
-import { ThemeStore } from "../../ThemeStore";
+import { ThemeStore } from "../ThemeStore";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
